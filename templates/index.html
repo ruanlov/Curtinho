@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curtinho</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #ffffff;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.container {
+			width: min(92vw, 720px);
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0 0 32px;
+			font-size: clamp(3rem, 8vw, 6rem);
+			color: #000000;
+			font-weight: 800;
+			letter-spacing: 0.08em;
+		}
+
+		form {
+			display: flex;
+			gap: 12px;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		input[type="text"] {
+			flex: 1 1 320px;
+			max-width: 520px;
+			padding: 16px 18px;
+			border: 1px solid #000000;
+			border-radius: 8px;
+			font-size: 1rem;
+			outline: none;
+		}
+
+		button {
+			padding: 16px 28px;
+			border: 1px solid #000000;
+			border-radius: 8px;
+			background: #000000;
+			color: #ffffff;
+			font-size: 1rem;
+			font-weight: 700;
+			cursor: pointer;
+		}
+
+		button:hover {
+			opacity: 0.9;
+		}
+	</style>
+</head>
+<body>
+	<main class="container">
+		<h1>CURTINHO</h1>
+		<form method="post">
+			<input type="text" name="url" placeholder="Cole um link aqui" aria-label="Cole um link aqui">
+			<button type="submit">encurtar</button>
+		</form>
+	</main>
+</body>
+</html>
