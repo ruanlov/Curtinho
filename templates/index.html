@@ -34,14 +34,15 @@
 
 		form {
 			display: flex;
+			flex-direction: column;
 			gap: 12px;
-			justify-content: center;
-			flex-wrap: wrap;
+			align-items: stretch;
+			width: min(100%, 520px);
+			margin: 0 auto;
 		}
 
 		input[type="text"] {
-			flex: 1 1 320px;
-			max-width: 520px;
+			width: 100%;
 			padding: 16px 18px;
 			border: 1px solid #000000;
 			border-radius: 8px;
@@ -49,7 +50,14 @@
 			outline: none;
 		}
 
+		.helper {
+			margin: -4px 0 8px;
+			font-size: 0.95rem;
+			color: #333333;
+		}
+
 		button {
+			width: 100%;
 			padding: 16px 28px;
 			border: 1px solid #000000;
 			border-radius: 8px;
@@ -70,6 +78,8 @@
 		<h1>CURTINHO</h1>
 		<form method="post">
 			<input type="text" name="url" placeholder="Cole um link aqui" aria-label="Cole um link aqui">
+			<input type="text" name="link_curto_personalizado" placeholder="Encurtamento personalizado (ex: ruan)" aria-label="Encurtamento personalizado">
+			<p class="helper">Se quiser, defina o final do link curto. Exemplo: /ruan</p>
 			<button type="submit">encurtar</button>
 		</form>
 	</main>
