@@ -1,1 +1,3 @@
 curtinho.db
+**/__pycache__/
+*.pyc
